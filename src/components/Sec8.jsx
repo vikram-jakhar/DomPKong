@@ -10,30 +10,52 @@ function Accordion({ question, answer }) {
 
     const toggleAccordion1 = () => {
         firstopen(!first);
+        secondopen(false)
+        thirdopen(false)
+        fourthopen(false)
+        fivethopen(false)
+        sixthopen(false)
+
     };
     const toggleAccordion2 = () => {
-        secondopen(!second);
-        firstopen(false)
+        firstopen(false);
+        secondopen(!second)
+        thirdopen(false)
+        fourthopen(false)
+        fivethopen(false)
+        sixthopen(false)
     };
     const toggleAccordion3 = () => {
-        thirdopen(!third);
-        firstopen(false)
+        firstopen(false);
         secondopen(false)
+        thirdopen(!third)
+        fourthopen(false)
+        fivethopen(false)
+        sixthopen(false)
     };
     const toggleAccordion4 = () => {
-        fourthopen(!fourth);
-        firstopen(false)
+        firstopen(false);
         secondopen(false)
+        thirdopen(false)
+        fourthopen(!fourth)
+        fivethopen(false)
+        sixthopen(false)
     };
     const toggleAccordion5 = () => {
-        fivethopen(!fiveth);
-        firstopen(false)
+        firstopen(false);
         secondopen(false)
+        thirdopen(false)
+        fourthopen(false)
+        fivethopen(!fiveth)
+        sixthopen(false)
     };
     const toggleAccordion6 = () => {
-        sixthopen(!sixth);
-        firstopen(false)
+        firstopen(false);
         secondopen(false)
+        thirdopen(false)
+        fourthopen(false)
+        fivethopen(false)
+        sixthopen(!sixth)
     };
 
     return (
@@ -44,7 +66,7 @@ function Accordion({ question, answer }) {
                 <div>
                     <h2>
                         <button onClick={toggleAccordion1} className="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3" >
-                            <span className="text-white text-{22px} font-Montserrat font-bold leading-{108%}">{question}What is Flowbite?</span>
+                            <h5 className="text-white text-[22px] font-Montserrat font-bold leading-{108%}">{question}What is Flowbite?</h5>
                             <span className=" text-4xl font-light text-yellow-500">{first ? '-' : '+'}</span>
                         </button>
                     </h2>
@@ -58,7 +80,7 @@ function Accordion({ question, answer }) {
                     </div>
                     <h2>
                         <button onClick={toggleAccordion2} className="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3" >
-                            <span className="text-white text-{22px} font-Montserrat font-bold leading-{108%}">{question}Fermentum tortor aenean.</span>
+                            <span className="text-white text-[22px] font-Montserrat font-bold leading-{108%}">{question}Fermentum tortor aenean.</span>
                             <span className=" text-4xl font-light text-yellow-500">{second ? '-' : '+'}</span>
                         </button>
                     </h2>
@@ -72,7 +94,7 @@ function Accordion({ question, answer }) {
                     </div>
                     <h2>
                         <button onClick={toggleAccordion3} className="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3" >
-                            <span className="text-white text-{22px} font-Montserrat font-bold leading-{108%}">{question}Dictum est amet sollicitudin.</span>
+                            <span className="text-white text-[22px] font-Montserrat font-bold leading-{108%}">{question}Dictum est amet sollicitudin.</span>
                             <span className=" text-4xl font-light text-yellow-500">{third ? '-' : '+'}</span>
                         </button>
                     </h2>
@@ -86,7 +108,7 @@ function Accordion({ question, answer }) {
                     </div>
                     <h2>
                         <button onClick={toggleAccordion4} className="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3" >
-                            <span className="text-white text-{22px} font-Montserrat font-bold leading-{108%}">{question}Sed vulputate mi faucibus.</span>
+                            <span className="text-white text-[22px] font-Montserrat font-bold leading-{108%}">{question}Sed vulputate mi faucibus.</span>
                             <span className=" text-4xl font-light text-yellow-500">{fourth ? '-' : '+'}</span>
                         </button>
                     </h2>
@@ -100,29 +122,29 @@ function Accordion({ question, answer }) {
                     </div>
                     <h2>
                         <button onClick={toggleAccordion5} className="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3" >
-                            <span className="text-white text-{22px} font-Montserrat font-bold leading-{108%}">{question}Commodo placerat ultricies.</span>
+                            <span className="text-white text-[22px] font-Montserrat font-bold leading-{108%}">{question}Commodo placerat ultricies.</span>
                             <span className=" text-4xl font-light text-yellow-500">{fiveth ? '-' : '+'}</span>
                         </button>
                     </h2>
                     <div>
                         {fiveth && (
                             <div className="py-5 border-b border-gray-200  dark:border-gray-700"> {answer}
-                                <h5 className="mb-2 text-white text-[22px] font-bold leading-[108%] font-Montserrat">Arcu faucibus diam feugiat magna etiam.</h5>
-                                <p className=" text-white text-[16px] font-normal leading-[160%] font-Montserrat"> Arcu faucibus diam feugiat magna etiam. Leo ridiculus mauris, risus vitae luctus volutpat turpis. Nisl, consequat tellus laoreet viverra diam nulla. Etiam vitae, proin Leo at nibh nibh.</p>
+                                <h5 className="mb-2 text-white md:text-[22px] text-[16px] font-bold leading-[108%] font-Montserrat">Arcu faucibus diam feugiat magna etiam.</h5>
+                                <p className=" text-white md:text-[16px] text-[12px] font-normal leading-[160%] font-Montserrat"> Arcu faucibus diam feugiat magna etiam. Leo ridiculus mauris, risus vitae luctus volutpat turpis. Nisl, consequat tellus laoreet viverra diam nulla. Etiam vitae, proin Leo at nibh nibh.</p>
                             </div>
                         )}
                     </div>
                     <h2>
                         <button onClick={toggleAccordion6} className="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3" >
-                            <span className="text-white text-{22px} font-Montserrat font-bold leading-{108%}">{question}Nunc amet cursus morbi donec.</span>
+                            <span className="text-white md:text-[22px] text-[16px] font-Montserrat font-bold leading-{108%}">{question}Nunc amet cursus morbi donec.</span>
                             <span className=" text-4xl font-light text-yellow-500">{sixth ? '-' : '+'}</span>
                         </button>
                     </h2>
                     <div>
                         {sixth && (
                             <div className="py-5 border-b border-gray-200  dark:border-gray-700"> {answer}
-                                <h5 className="mb-2 text-white text-[22px] font-bold leading-[108%] font-Montserrat">Arcu faucibus diam feugiat magna etiam.</h5>
-                                <p className=" text-white text-[16px] font-normal leading-[160%] font-Montserrat"> Arcu faucibus diam feugiat magna etiam. Leo ridiculus mauris, risus vitae luctus volutpat turpis. Nisl, consequat tellus laoreet viverra diam nulla. Etiam vitae, proin Leo at nibh nibh.</p>
+                                <h5 className="mb-2 text-white md:text-[22px] text-[16px] font-bold leading-[108%] font-Montserrat">Arcu faucibus diam feugiat magna etiam.</h5>
+                                <p className=" text-white md:text-[16px] text-[12px] font-normal leading-[160%] font-Montserrat"> Arcu faucibus diam feugiat magna etiam. Leo ridiculus mauris, risus vitae luctus volutpat turpis. Nisl, consequat tellus laoreet viverra diam nulla. Etiam vitae, proin Leo at nibh nibh.</p>
                             </div>
                         )}
                     </div>
@@ -187,8 +209,8 @@ function Accordion({ question, answer }) {
                     </a>
                 </span>
             </div>
-            <div className=" w-full h-[1px] bg-white mb-6"></div>
-            <p className="text-center text-white text-[16px] font-normal">© DomPKong 2022</p>
+            <div className=" w-full h-[1px] bg-white "></div>
+            <p className="text-center text-white text-[16px] font-normal pb-4 pt-4 ">© DomPKong 2022</p>
         </div>
     );
 }

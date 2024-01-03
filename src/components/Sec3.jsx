@@ -8,7 +8,9 @@ const Sec3 = () => {
           Utilities
         </h2>
         <div className="grid lg:grid-cols-3 md:grid-cols-2 pt-14 gap-4 mb-8">
-          <div className="rounded-2xl border border-[rgba(255, 255, 255, 0.20)] py-[22px] px-[20px] bg-[#353535] relative hover:bg-[#FDDA60] hover:text-black duration-300 group">
+          <div className="rounded-2xl border border-[rgba(255, 255, 255, 0.20)] py-[22px] px-[20px] bg-[rgba(255, 255, 255, 0.10)] relative hover:bg-[#FDDA60] hover:text-black duration-300 group overflow-hidden">
+            <div className="w-[107px] h-[107px] bg-white top-0 right-0 blur-[94px]  absolute z-[-1] "></div>
+            <div className="w-[107px] h-[107px] bg-white bottom-0 left-0 blur-[94px]  absolute z-[-1] "></div>
             <span className=" flex flex-col items-center ">
               <svg
                 width="56"
@@ -62,10 +64,11 @@ const Sec3 = () => {
               amet et. Erat nam molestie. Vitae mollis lacus senectus mattis
               nisl. Porta , adipiscing sed mus diam amet, ac sed tellus.{" "}
             </p>
-            <div className="w-[91px] h-[28px] bg-[#fff] blur-[94px] absolute right-0 top-0"></div>
-            <div className="w-[91px] h-[28px] bg-[#fff] blur-[94px] absolute left-0 bottom-0"></div>
+
           </div>
-          <div className="rounded-2xl border border-[rgba(255, 255, 255, 0.20)] py-[22px] px-[20px] bg-[#353535] relative hover:bg-[#FDDA60] hover:text-black duration-300 group">
+          <div className="rounded-2xl border border-[rgba(255, 255, 255, 0.20)] py-[22px] px-[20px] bg-[rgba(255, 255, 255, 0.10) relative hover:bg-[#FDDA60] hover:text-black duration-300 group overflow-hidden">
+            <div className="w-[107px] h-[107px] bg-white top-0 right-0 blur-[94px]  absolute z-[-1] "></div>
+            <div className="w-[107px] h-[107px] bg-white bottom-0 left-0 blur-[94px]  absolute z-[-1] "></div>
             <span className=" flex flex-col items-center ">
               <svg
                 width="56"
@@ -101,7 +104,9 @@ const Sec3 = () => {
             <div className="w-[91px] h-[28px] bg-[#fff] blur-[94px] absolute right-0 top-0"></div>
             <div className="w-[91px] h-[28px] bg-[#fff] blur-[94px] absolute left-0 bottom-0"></div>
           </div>
-          <div className=" rounded-2xl border border-[rgba(255, 255, 255, 0.20)] py-[22px] px-[20px] bg-[#353535] relative hover:bg-[#FDDA60] hover:text-black duration-300 group">
+          <div className=" rounded-2xl border border-[rgba(255, 255, 255, 0.20)] py-[22px] px-[20px] bg-[rgba(255, 255, 255, 0.10) relative hover:bg-[#FDDA60] hover:text-black duration-300 group overflow-hidden">
+            <div className="w-[107px] h-[107px] bg-white top-0 right-0 blur-[94px]  absolute z-[-1] "></div>
+            <div className="w-[107px] h-[107px] bg-white bottom-0 left-0 blur-[94px]  absolute z-[-1] "></div>
             <span className=" flex flex-col items-center ">
               <svg
                 width="56"

@@ -4,16 +4,22 @@ import navimg from "../assets/img/nav-img.png"
 const Header = () => {
   return (
     <div className="max-w-[1140px] mx-auto px-3 ">
-      <div className="grid lg:grid-cols-2 grid-cols-1">
-        <div className="flex lg:justify-end :lgitems-end justify-center items-center">
-          <img src={navimg} alt="pagelogo" />
+      <nav className="flex md:justify-end  w-full ">
+        <div className=" flex justify-between items-center md:w-[55%] w-full">
+          <div>
+            <img src={navimg} alt="loading" />
+          </div>
+          <div className="md:justify-between justify-end">
+            <button className="hover:bg-[#FDDA60] duration-500  hover:scale-[0.9]  rounded shadow-[0px_9px_29px_0px_rgba(253,218,96,0.50)] bg-[#fdda60] md:py-4 md:px-6 px-3 py-3 font-normal md:text-base text-[12px] leading-[108%] text-black  font-azo mt-6 mb-5 xl:mt-3  ">
+              Connect Wallet
+              
+            </button>
+          </div>
+
         </div>
-        <div className=" lg:justify-end lg:text-right flex justify-center">
-          <button className="hover:bg-[#FDDA60] duration-500  hover:scale-[0.9]  rounded shadow-[0px_9px_29px_0px_rgba(253,218,96,0.50)] bg-[#fdda60] py-4 px-6 font-normal text-base leading-[108%] text-black text-[16px] font-azo mt-6 mb-5 xl:mt-3">
-            CONNECT WALLET
-          </button>
-        </div>
-      </div>  
+
+      </nav>
+      
       <div className="flex gap-4 pt-4 justify-center">
         <a href="" className="hover:animate-bounce ">
           <svg
@@ -113,10 +119,10 @@ const Header = () => {
         </a>
       </div>
       <div className="flex justify-center flex-col pt-5">
-      <h1 className=" xl:text-[64px] lg:text-[56px] text-[30px] sm:text-[40px] font-normal leading-[108%] text-white  text-center   m-auto font-azo ">WELCOME  <br /> TO <span className=" text-[#fdda60]">DomPKong</span> </h1>
-      <p className="text-base font-normal text-white max-w-[506px] text-center mx-auto pt-5 font-Montserrat">Turpis et tortor vel pharetra nibh. Mauris nisl sit vitae viverra amet et. Erat nam molestie. Vita</p>
+        <h1 className=" xl:text-[64px] lg:text-[56px] text-[30px] sm:text-[40px] font-normal leading-[108%] text-white  text-center   m-auto font-azo ">WELCOME  <br /> TO <span className=" text-[#fdda60]">DomPKong</span> </h1>
+        <p className="text-base font-normal text-white max-w-[506px] text-center mx-auto pt-5 font-Montserrat">Turpis et tortor vel pharetra nibh. Mauris nisl sit vitae viverra amet et. Erat nam molestie. Vita</p>
       </div>
-      <div className=" gap-6 flex flex-wrap justify-center pt-6 cursor-cursor">
+      <div className=" gap-6 flex flex-wrap justify-center pt-6 cursor-cursor md:pb-[100px] pb-14">
         <button className="hover:bg-[#FDDA60] duration-500  hover:scale-[0.9] rounded bg-[#fdda60] shadow-[0px_4px_16px_0px_rgba(253,218,96,0.50)] py-4 px-6 font-normal text-base leading-[108%] text-black font-azo">Whitepaper</button>
         <button className="hover:bg-[#FDDA60] duration-500  hover:scale-[0.9] rounded bg-[#fdda60] shadow-[0px_4px_16px_0px_rgba(253,218,96,0.50)] py-4 px-6 font-normal text-base leading-[108%] text-black font-azo">Mint</button>
         <button className="hover:bg-[#FDDA60] duration-500  hover:scale-[0.9] rounded bg-[#fdda60] shadow-[0px_4px_16px_0px_rgba(253,218,96,0.50)] py-4 px-6 font-normal text-base leading-[108%] text-black font-azo">Opensea</button>

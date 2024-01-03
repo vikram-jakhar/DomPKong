@@ -5,11 +5,13 @@ const Sec5 = () => {
     let [count, setCount] = React.useState(1);
 
     function add() {
-        setCount((prevCount) => (prevCount < 9 ? prevCount + 1 : prevCount));
+        setCount((prevCount) => (prevCount < 70 ? prevCount + 1 : prevCount));
     }
     function minus() {
         setCount((prevCount) => (prevCount > 1 ? prevCount - 1 : 1));
     }
+    const setcount = count < 10 ? `0${count}` : count;
+    
     return (
         <>
          
@@ -17,9 +19,9 @@ const Sec5 = () => {
         <div className="w-[296px]  h-[296px] blur-[146px] bg-[#FDDA60] absolute top-[156px] right-[-346px]"></div>
 
         <div className="max-w-[900px] w-full mx-auto px-3">
-            <div className=" grid lg:grid-cols-2">
+            <div className=" grid lg:grid-cols-2 mt-14 pt-12  mb-9">
                 <div className=" lg:w-[50%] w-full flex justify-center ">
-                    <img src={mintimg} alt="" />
+                    <img src={mintimg} alt="" className="mt-9 mb-5" />
                 </div>
                 <div className=" w-full lg:mt-0 mt-12 ">
                     <h2 className="text-white font-azo lg:text-[64px] sm:text-[50px] text-[30px] font-normal leading-[108%]">
@@ -62,14 +64,14 @@ const Sec5 = () => {
                         </div>
                     </div>
                     <div className="flex items-center justify-center lg:justify-start gap-3 pt-12 " >
-                        <div className=" hover:bg-[#FDDA60] duration-500  hover:scale-[0.9]  max-w-[75px] w-full h-[65px] rounded bg-white flex justify-center items-center ">
-                            <p className="text-black  text-[36px] font-Montserrat font-black leading-[108%] text-center cursor" onClick={minus}>-</p>
+                        <div className=" hover:bg-[#FDDA60] duration-500  hover:scale-[0.9]  max-w-[75px] w-full h-[65px] rounded bg-white flex justify-center items-center cursor" onClick={minus}>
+                            <p className="text-black  text-[36px] font-Montserrat font-black leading-[108%] text-center " >-</p>
                         </div>
                         <div className="sm:max-w-[320px] max-w-[200px] w-full h-[65px]  border-[2px] border-[white] flex items-center justify-center">
-                            <p className="text-[36px] text-white font-Montserrat font-black leading-[108%]">0{count} </p>
+                            <p className="text-[36px] text-white font-Montserrat font-black leading-[108%]">{setcount} </p>
                         </div>
-                        <div className=" hover:bg-[#FDDA60] duration-500  hover:scale-[0.9] max-w-[75px] w-full h-[65px] rounded bg-white flex justify-center items-center">
-                            <p className="text-black text-[36px] font-Montserrat font-black leading-[108%] text-center cursor" onClick={add}>+</p>
+                        <div className=" hover:bg-[#FDDA60] duration-500  hover:scale-[0.9] max-w-[75px] w-full h-[65px] rounded bg-white flex justify-center items-center cursor" onClick={add}>
+                            <p className="text-black text-[36px] font-Montserrat font-black leading-[108%] text-center ">+</p>
                         </div>
                     </div>
                     <div className="flex justify-center flex-wrap">

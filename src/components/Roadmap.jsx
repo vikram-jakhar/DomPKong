@@ -4,7 +4,7 @@ import semicircle from "../assets/img/circle12.webp";
 
 function Roadmap() {
   return (
-    <>
+    <div className=" overflow-hidden">
       <div className="bg-[#0A0A0A] min-h-[1044px] pb-6 xl:pb-0">
         <h2 className="text-white text-center font-azo lg:text-[64px] sm:text-[45px] text-[30px]    not-italic font-normal leading-[108.744%] pt-[94px] pb-[71px]">
           Roadmap
@@ -18,7 +18,7 @@ function Roadmap() {
               alt="semicircle"
             />
           </div>
-          <div className="w-[100%] xl:w-[64%] relative flex flex-col gap-y-6">
+          <div className="w-[100%] xl:w-[64%] relative flex flex-col gap-y-6 md:mt-0 mt-9 ">
             <div className="flex items-center xl:max-w-[903px] xl:absolute xl:top-[1%] xl:left-[-24%] group">
               <svg
                 className="shrink-0 hidden xl:block"
@@ -34,14 +34,14 @@ function Roadmap() {
                   fill="white"
                 />
               </svg>
-              <div className="w-[76px] h-[76px] bg-white text-black font-montserrat text-[20px] not-italic font-black rounded-[50%] flex justify-center items-center leading-[108.744%] xl:ml-6 mr-[43px] shrink-0 group-hover:bg-[#FDDA60] group-hover:shadow-[0px_4px_21px_rgba(253,218,96,0.70)]">
+              <div className="w-[76px] h-[76px] bg-white text-black font-Montserrat text-[20px] not-italic font-black rounded-[50%] flex justify-center items-center leading-[108.744%] xl:ml-6 mr-[43px] shrink-0 group-hover:bg-[#FDDA60] group-hover:shadow-[0px_4px_21px_rgba(253,218,96,0.70)]">
                 20%
               </div>
               <div className="flex flex-col gap-y-2 xl:max-w-[593px]">
                 <h3 className="text-white font-azo text-[20px] not-italic font-normal leading-[108.744%]">
                   Phase 1
                 </h3>
-                <p className="text-white font-montserrat text-base not-italic font-normal leading-[160%]">
+                <p className="text-white font-Montserrat text-base not-italic font-normal leading-[160%]">
                   Mi amet elementum, posuere tempus odio eu lacinia. Natoque
                   arcu viverra ullamcorper condimentum massa laoree
                 </p>
@@ -63,14 +63,14 @@ function Roadmap() {
                   fill="white"
                 />
               </svg>
-              <div className="w-[76px] h-[76px] bg-white text-black font-montserrat text-[20px] not-italic font-black rounded-[50%] flex justify-center items-center leading-[108.744%] xl:ml-[41px] mr-[43px] shrink-0 group-hover:bg-[#FDDA60] group-hover:shadow-[0px_4px_21px_rgba(253,218,96,0.70)]">
+              <div className="w-[76px] h-[76px] bg-white text-black font-Montserrat text-[20px] not-italic font-black rounded-[50%] flex justify-center items-center leading-[108.744%] xl:ml-[41px] mr-[43px] shrink-0 group-hover:bg-[#FDDA60] group-hover:shadow-[0px_4px_21px_rgba(253,218,96,0.70)]">
                 40%
               </div>
               <div className="flex flex-col gap-y-2 xl:max-w-[593px]">
                 <h3 className="text-white font-azo text-[20px] not-italic font-normal leading-[108.744%]">
                   Phase 2
                 </h3>
-                <p className="text-white font-montserrat text-base not-italic font-normal leading-[160%]">
+                <p className="text-white font-Montserrat text-base not-italic font-normal leading-[160%]">
                   Amet viverra diam netus aenean at mauris, facilisis quis. Urna
                   euismod sed ultricies arcu ullamcorper
                 </p>
@@ -92,14 +92,14 @@ function Roadmap() {
                   fill="white"
                 />
               </svg>
-              <div className="w-[76px] h-[76px] bg-white text-black font-montserrat text-[20px] not-italic font-black rounded-[50%] flex justify-center items-center leading-[108.744%] xl:ml-[54px] mr-[43px] shrink-0 group-hover:bg-[#FDDA60] group-hover:shadow-[0px_4px_21px_rgba(253,218,96,0.70)]">
+              <div className="w-[76px] h-[76px] bg-white text-black font-Montserrat text-[20px] not-italic font-black rounded-[50%] flex justify-center items-center leading-[108.744%] xl:ml-[54px] mr-[43px] shrink-0 group-hover:bg-[#FDDA60] group-hover:shadow-[0px_4px_21px_rgba(253,218,96,0.70)]">
                 60%
               </div>
               <div className="flex flex-col gap-y-2 xl:max-w-[593px]">
                 <h3 className="text-white font-azo text-[20px] not-italic font-normal leading-[108.744%]">
                   Phase 3
                 </h3>
-                <p className="text-white font-montserrat text-base not-italic font-normal leading-[160%]">
+                <p className="text-white font-Montserrat text-base not-italic font-normal leading-[160%]">
                   Hendrerit massa non sed sit. Lobortis in pulvinar lectus ut in
                   elit nibh faucibus mauris.
                 </p>
@@ -121,14 +121,14 @@ function Roadmap() {
                   fill="white"
                 />
               </svg>
-              <div className="w-[76px] h-[76px] bg-white text-black font-montserrat text-[20px] not-italic font-black rounded-[50%] flex justify-center items-center leading-[108.744%] xl:ml-[41px] mr-[43px] shrink-0 group-hover:bg-[#FDDA60] group-hover:shadow-[0px_4px_21px_rgba(253,218,96,0.70)]">
+              <div className="w-[76px] h-[76px] bg-white text-black font-Montserrat text-[20px] not-italic font-black rounded-[50%] flex justify-center items-center leading-[108.744%] xl:ml-[41px] mr-[43px] shrink-0 group-hover:bg-[#FDDA60] group-hover:shadow-[0px_4px_21px_rgba(253,218,96,0.70)]">
                 80%
               </div>
               <div className="flex flex-col gap-y-2 xl:max-w-[593px]">
                 <h3 className="text-white font-azo text-[20px] not-italic font-normal leading-[108.744%]">
                   Phase4
                 </h3>
-                <p className="text-white font-montserrat text-base not-italic font-normal leading-[160%]">
+                <p className="text-white font-Montserrat text-base not-italic font-normal leading-[160%]">
                   Ut egestas lacus nec varius blandit volutpat, malesuada nunc,
                   nisl. Nisl mattis convallis lacus tristique.
                 </p>
@@ -150,14 +150,14 @@ function Roadmap() {
                   fill="white"
                 />
               </svg>
-              <div className="w-[76px] h-[76px] bg-white text-black font-montserrat text-[20px] not-italic font-black rounded-[50%] flex justify-center items-center leading-[108.744%] xl:ml-[24px] mr-[43px] shrink-0 group-hover:bg-[#FDDA60] group-hover:shadow-[0px_4px_21px_rgba(253,218,96,0.70)]">
+              <div className="w-[76px] h-[76px] bg-white text-black font-Montserrattext-[20px] not-italic font-black rounded-[50%] flex justify-center items-center leading-[108.744%] xl:ml-[24px] mr-[43px] shrink-0 group-hover:bg-[#FDDA60] group-hover:shadow-[0px_4px_21px_rgba(253,218,96,0.70)]">
                 100%
               </div>
               <div className="flex flex-col gap-y-2 xl:max-w-[593px]">
                 <h3 className="text-white font-azo text-[20px] not-italic font-normal leading-[108.744%]">
                   Phase 5
                 </h3>
-                <p className="text-white font-montserrat text-base not-italic font-normal leading-[160%]">
+                <p className="text-white font-Montserrat text-base not-italic font-normal leading-[160%]">
                   Faucibus congue risus nisl dictum. A, viverra malesuada nunc
                   varius. Ut dignissim mauris eu sed nisl neque.
                 </p>
@@ -168,7 +168,7 @@ function Roadmap() {
          <button></button>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

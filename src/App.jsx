@@ -10,17 +10,21 @@ import Sec8 from './components/Sec8'
 import Loder from './components/Loder'
 import Backtotop from './components/Backtotop'
 import Roadmap from './components/Roadmap'
+import Ex from './components/Ex'
 
 function App() {
 
   return (
     <>
+    {/* <Ex/> */}
       <div className='bg-header'>
         <Header />
       </div>
       <Sec2 />
       <Sec3 />
+      <div  className=' overflow-hidden'>
       <Sec4 />
+      </div>
       <div className='bg-img-bottal flex justify-center items-center overflow-hidden relative'>
           <Sec5 />
       </div>
