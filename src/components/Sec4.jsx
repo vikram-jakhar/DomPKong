@@ -27,7 +27,7 @@ function Section3() {
     slidesToShow: 4,
     slidesToScroll: 1,
     initialSlide: 0,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 0,
     easing: "linear",
     speed: "5000",
@@ -77,12 +77,11 @@ function Section3() {
           data-aos-once="true"
           {...settings}
         >
-          <div className="h-[200px]">
+          <div className="h-[190px]">
             <img
-              className="rounded-[8px] border-4 border-solid border-[#FDDA60] shadow-[0_0_15px_0_#FDDA60]"
+              className=" h-full rounded-[8px] border-4 border-solid border-[#FDDA60] shadow-[0_0_15px_0_#FDDA60]"
               src={bigkong}
-              alt="bigkong"
-            />
+              alt="bigkong" />
           </div>
           <div className="h-[200px]">
             <img
@@ -114,11 +113,11 @@ function Section3() {
           </div>
         </Slider>
         <img
-          className="max-w-[786px] translate-y-[-70px] w-full relative z-[2] object-cover"
+          className="max-w-[786px]  w-full relative z-[2] object-cover"
           data-aos="zoom-in"
           data-aos-once="true"
           src={bigkong}
-          alt="kongcat"
+          alt="bigkong"
         />
         <Slider
           className="min-[1200px]:hidden block max-w-[1416px] mx-auto px-3 w-full mb-6"
@@ -149,16 +148,16 @@ function Section3() {
           </div>
           <div className="h-[200px]]">
             <img
-              className="rounded-[8px] border-none shadow-[0_0_15px_0_#FDDA60"
+              className="rounded-[8px] border-solid border-4 border-[#FDDA60]"
               src={Elvis}
               alt="Elvis"
             />
           </div>
           <div className="h-[200px]">
             <img
-              className="w-full h-full border-[#FDDA60] shadow-[0_0_15px_0_#FDDA60]"
+              className="border-[#FDDA60] border-4 rounded"
               src={Pac}
-              alt="brown ape"
+              alt="Pac"
             />
           </div>
         </Slider>
@@ -171,7 +170,7 @@ function Section3() {
           <img
             className="w-full h-full"
             src={kongcat}
-            alt="brownApe"
+            alt="kongcat"
           />
         </div>
         <div
@@ -179,7 +178,7 @@ function Section3() {
           data-aos="fade-right"
           data-aos-once="true">
           <img
-            className="w-full h-full"
+            className=" h-full w-full "
             src={bigkong}
             alt="bigkong"
           />
@@ -214,7 +213,7 @@ function Section3() {
           <img
             className="w-full h-full"
             src={kongwhite}
-            alt="brown ape"
+            alt="kongwhite"
           />
         </div>
         {/* side boxes right side */}
@@ -226,7 +225,7 @@ function Section3() {
           <img
             className="w-full h-full"
             src={HeMan}
-            alt="brown ape"
+            alt="HeMan"
           />
         </div>
         <div
@@ -237,7 +236,7 @@ function Section3() {
           <img
             className="w-full h-full"
             src={Anonymous}
-            alt="ape"
+            alt="Anonymous"
           />
         </div>
         <div
@@ -245,7 +244,7 @@ function Section3() {
           data-aos="fade-left"
           data-aos-once="true"
         >
-          <img className="w-full h-full" src={Pac} alt="ape" />
+          <img className="w-full h-full" src={Pac} alt="Pac" />
         </div>
         <div
           className="hidden min-[1200px]:block absolute w-[180px] h-[180px] rounded-[8px] border-4 border-[#FDDA60] border-solid shadow-[0_0_15px_0_#FDDA60] top-[57%] right-[4%]"
@@ -253,9 +252,9 @@ function Section3() {
           data-aos-once="true"
         >
           <img
-            className="w-full h-full"
+            className=" h-full"
             src={Elvis}
-            alt="ape" />
+            alt="Elvis" />
         </div>
         <div
           className="hidden min-[1200px]:block absolute w-[180px] h-[180px] rounded-[8px] border-4 border-solid border-[#FDDA60] shadow-[0_0_15px_0_#FDDA60] bottom-[8%] right-[-2%]"
@@ -265,7 +264,7 @@ function Section3() {
           <img
             className="w-full h-full"
             src={konggun}
-            alt="brown ape"
+            alt="konggun"
           />
         </div>
       </div>
