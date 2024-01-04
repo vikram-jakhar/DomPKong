@@ -8,9 +8,9 @@ import Sec6 from "./components/Sec6";
 import Sec7 from "./components/Sec7";
 import Sec8 from "./components/Sec8";
 import Loder from "./components/Loder";
-// import Backtotop from './components/Backtotop'
+import Backtotop from './components/Backtotop'
 import Roadmap from "./components/Roadmap";
-import Ex from "./components/Ex";
+// import Ex from "./components/Ex";
 
 function App() {
   return (
@@ -34,7 +34,7 @@ function App() {
         <Sec8 />
       </div>
       <Loder />
-      {/* <Backtotop /> */}
+      <Backtotop />
     </>
   );
 }
